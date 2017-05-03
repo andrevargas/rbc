@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jumbotron-narrow.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
+
     <div class="container">
-        <ul class="nav nav-pills" role="tablist">
-            <li><a href="#home" data-toggle="tab">Home</a></li>
-            <li class="active"><a href="#config" data-toggle="tab">Config</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade" id="home"></div>
-            <div class="tab-pane fade in active" id="config">
-                <h3>Configurações</h3>
-                <form>
-                    <div class="col-sm-6">
-                        <h4>Sistema operacional</h4>
-                        <div class="well">
-                            <div class="form-group">
-                                <label for="android">Android</label>
-                                <input type="number" class="form-control" id="so-android">
-                            </div>
-                            <div class="form-group">
-                                <label for="ios">iOS</label>
-                                <input type="number" class="form-control" id="so-ios">
-                            </div>
-                            <div class="form-group">
-                                <label for="ios">Windows Phone</label>
-                                <input type="number" class="form-control" id="so-windows">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>Quantidade de núcleos</h4>
-                        <div class="well">
-                            <div class="form-group">
-                                <label for="android">Dual core</label>
-                                <input type="number" class="form-control" id="core-2">
-                            </div>
-                            <div class="form-group">
-                                <label for="ios">Quad core</label>
-                                <input type="number" class="form-control" id="core-4">
-                            </div>
-                            <div class="form-group">
-                                <label for="ios">Octa core</label>
-                                <input type="number" class="form-control" id="core-8">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Sistema RBC</h3>
         </div>
+
+        <input type="text" id="search" class="form-control input-lg" placeholder="Buscar produto..." />
+        
+        <h3 class="section-title">Mais populares</h3>
+        <div class="row marketing" id="show-off"></div>
+
+        <footer class="footer">
+            <p>&copy; 2017 Sistema RBC, by André Vargas &amp; Cristiano Winter.</p>
+        </footer>
+
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="scripts/cases.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script>
+        App.init();
+    </script>
+
 </body>
+
 </html>
