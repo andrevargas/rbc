@@ -60,7 +60,13 @@ const App = (() => {
                     <img src="images/no-image.webp">
                     <div class="caption">
                         <h3>${item.brand} ${item.model}</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ad illo facere hic soluta dolores.</p>
+                        <p>
+                            <strong>SO</strong>: ${item.so} <br />
+                            <strong>RAM</strong>: ${item.ram}GB <br />
+                            <strong>Armazenamento</strong>: ${item.storage}GB <br />
+                            <strong>Tam. da tela</strong>: ${item.screenSize}'
+                        </p>
+                        <h4>R$ ${item.price.toFixed(2).replace('.', ',')}</h4>
                     </div>
                 </div>
             </div>

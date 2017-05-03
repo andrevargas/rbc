@@ -3,131 +3,109 @@ const database = [{
         model: 'Mi 6',
         so: 'Android',
         screenSize: 5.15,
-        frequency: 2.45,
-        cores: 4,
         ram: 6,
         storage: 128,
         dualSim: true,
-        price: 2100,
+        price: 2100.0,
     },
     {
         brand: 'HTC',
         model: 'One X10',
         so: 'Android',
         screenSize: 5.5,
-        frequency: 1.8,
-        cores: 4,
         ram: 3,
         storage: 32,
         dualSim: true,
-        price: 2499
+        price: 2499.0
     },
     {
         brand: 'Huawei',
         model: 'Hono 8 Pro',
         so: 'Android',
         screenSize: 5.7,
-        frequency: 2.4,
-        cores: 4,
         ram: 4,
         storage: 64,
         dualSim: true,
-        price: 1900
+        price: 1900.0
     },
     {
         brand: 'Quantum',
         model: 'MUV Up',
         so: 'Android',
         screenSize: 5.5,
-        frequency: 1.3,
-        cores: 8,
         ram: 3,
         storage: 32,
         dualSim: true,
-        price: 999
+        price: 999.0
     },
     {
         brand: 'Samsung',
         model: 'Galaxy S8',
         so: 'Android',
         screenSize: 5.8,
-        frequency: 2.3,
-        cores: 4,
         ram: 4,
         storage: 64,
         dualSim: false,
-        price: 3519
+        price: 3519.0
     },
     {
         brand: 'Sony',
         model: 'Xperia L1',
         so: 'Android',
         screenSize: 5.5,
-        frequency: 1.4,
-        cores: 4,
         ram: 2,
         storage: 16,
         dualSim: true,
-        price: 2229
+        price: 2229.0
     },
     {
         brand: 'LG',
         model: 'G6',
         so: 'Android',
         screenSize: 5.7,
-        frequency: 2.35,
-        cores: 2,
         ram: 4,
         storage: 32,
         dualSim: false,
-        price: 2399
+        price: 2399.0
     },
     {
         brand: 'Motorola',
         model: 'Moto G5',
         so: 'Android',
         screenSize: 5,
-        frequency: 1.4,
-        cores: 4,
         ram: 4,
         storage: 32,
         dualSim: true,
-        price: 1349
+        price: 1349.0
     },
     {
         brand: 'Asus',
         model: 'Zenfone AR',
         so: 'Android',
         screenSize: 5.7,
-        frequency: 2.35,
-        cores: 2,
         ram: 8,
         storage: 256,
         dualSim: true,
-        price: 2249
+        price: 2249.0
     },
     {
         brand: 'Lenovo',
         model: 'Zuk Edge',
         so: 'Android',
         screenSize: 5.5,
-        frequency: 2.35,
-        cores: 2,
         ram: 6,
         storage: 64,
         dualSim: true,
-        price: 2349
+        price: 2349.0
     },
     {
         brand: 'Apple',
         model: 'Iphone 7 Plus',
         so: 'IOS',
         screenSize: 5.5,
-        frequency: 2.2,
-        cores: 4,
         ram: 3,
         storage: 256,
         dualSim: false,
-        price: 3059
+        price: 3059.0
     }
 ];

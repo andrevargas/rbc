@@ -1,7 +1,6 @@
 const SO_VALUES = {
     'Android': 0,
     'iOS': 0,
-    'Windows Phone': 0
 };
 
 const SCREEN_SIZE_VALUES = {
@@ -10,12 +9,6 @@ const SCREEN_SIZE_VALUES = {
     '5.7': 0,
     '5.8': 0,
     '5.15': 0
-};
-
-const CORES_VALUES = {
-    '2': 0,
-    '4': 0,
-    '8': 0
 };
 
 const RAM_VALUES = {
@@ -39,4 +32,15 @@ const PRICE_RANGE_VALUES = {
     '1000-1999': 0,
     '2000-2999': 0,
     '3000': 0 
+};
+
+const WEIGHTS = {
+    brand: 0,
+    model: 0,
+    so: 0,
+    screenSize: 0,
+    ram: 0,
+    storage: 0,
+    dualSim: 0,
+    priceRange: 0,
 };
