@@ -32,7 +32,7 @@ const RBC = (() => {
 
         const brandSim = simString(newCase.brand, storedCase.brand);
         const modelSim = simString(newCase.model, storedCase.model);
-        const dualSimSim = simString(newCase.dualSim, storedCase.dualSim);
+        const dualSimSim = simString(String(newCase.dualSim), String(storedCase.dualSim));
 
         const soSim = simNumber(
             SO_VALUES[newCase.so],
@@ -41,8 +41,8 @@ const RBC = (() => {
         );
 
         const screenSizeSim = simNumber(
-            SCREEN_SIZE_VALUES[newCase.screnSize],
-            SCREEN_SIZE_VALUES[storedCase.screnSize],
+            SCREEN_SIZE_VALUES[newCase.screenSize],
+            SCREEN_SIZE_VALUES[storedCase.screenSize],
             getMinMax(SCREEN_SIZE_VALUES)
         );
 
@@ -58,15 +58,9 @@ const RBC = (() => {
             getMinMax(STORAGE_VALUES)
         );
 
-        const storageSim = simNumber(
-            STORAGE_VALUES[newCase.storage],
-            STORAGE_VALUES[storedCase.storage],
-            getMinMax(STORAGE_VALUES)
-        );
-
         const priceRangeSim = simNumber(
-            PRICE_RANGE_VALUE[getPriceRange(newCase.price)],
-            PRICE_RANGE_VALUE[getPriceRange(storedCase.price)],
+            PRICE_RANGE_VALUES[getPriceRange(newCase.price)],
+            PRICE_RANGE_VALUES[getPriceRange(storedCase.price)],
             getMinMax(PRICE_RANGE_VALUES)
         );
 
@@ -82,8 +76,21 @@ const RBC = (() => {
             + (WEIGHTS.priceRange * priceRangeSim)
         ) / totalWeight;
 
-        return globalSim;
+        return {
+            id: storedCase.id,
+            simValue: globalSim
+        };
 
     }
+
+    function testCase(newCase) {
+        return database.map(storedCase =>
+            simGlobal(newCase, storedCase)
+        );
+    }
+
+    return {
+        testCase
+    };
 
 })();

@@ -1,5 +1,6 @@
 const database = [{
-        brand: 'Xiomi',
+        id: 1,
+        brand: 'Xiaomi',
         model: 'Mi 6',
         so: 'Android',
         screenSize: 5.15,
@@ -9,6 +10,7 @@ const database = [{
         price: 2100.0,
     },
     {
+        id: 2,
         brand: 'HTC',
         model: 'One X10',
         so: 'Android',
@@ -19,6 +21,7 @@ const database = [{
         price: 2499.0
     },
     {
+        id: 3,
         brand: 'Huawei',
         model: 'Hono 8 Pro',
         so: 'Android',
@@ -29,6 +32,7 @@ const database = [{
         price: 1900.0
     },
     {
+        id: 4,
         brand: 'Quantum',
         model: 'MUV Up',
         so: 'Android',
@@ -39,6 +43,7 @@ const database = [{
         price: 999.0
     },
     {
+        id: 5,
         brand: 'Samsung',
         model: 'Galaxy S8',
         so: 'Android',
@@ -49,6 +54,7 @@ const database = [{
         price: 3519.0
     },
     {
+        id: 6,
         brand: 'Sony',
         model: 'Xperia L1',
         so: 'Android',
@@ -59,6 +65,7 @@ const database = [{
         price: 2229.0
     },
     {
+        id: 7,
         brand: 'LG',
         model: 'G6',
         so: 'Android',
@@ -69,16 +76,18 @@ const database = [{
         price: 2399.0
     },
     {
+        id: 8,
         brand: 'Motorola',
         model: 'Moto G5',
         so: 'Android',
-        screenSize: 5,
+        screenSize: 5.0,
         ram: 4,
         storage: 32,
         dualSim: true,
         price: 1349.0
     },
     {
+        id: 9,
         brand: 'Asus',
         model: 'Zenfone AR',
         so: 'Android',
@@ -89,6 +98,7 @@ const database = [{
         price: 2249.0
     },
     {
+        id: 10,
         brand: 'Lenovo',
         model: 'Zuk Edge',
         so: 'Android',
@@ -99,9 +109,10 @@ const database = [{
         price: 2349.0
     },
     {
+        id: 11,
         brand: 'Apple',
         model: 'Iphone 7 Plus',
-        so: 'IOS',
+        so: 'iOS',
         screenSize: 5.5,
         ram: 3,
         storage: 256,

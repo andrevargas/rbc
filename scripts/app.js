@@ -9,6 +9,7 @@ const App = (() => {
     function init() {
         showInitialData();
         setupListeners();
+        startRecommendationWorker();
     }
 
     function findCasesByCriteria(criteria) {
@@ -53,15 +54,39 @@ const App = (() => {
         );
     }
 
+    function startRecommendationWorker() {
+        setTimeout(() => {
+
+            const result = RBC.testCase({
+                brand: 'Xiaomi',
+                model: 'Mi 6',
+                so: 'Android',
+                screenSize: 5.15,
+                ram: 6,
+                storage: 128,
+                dualSim: true,
+                price: 2100.0,
+            });
+            
+            const maxSim = result.reduce((prev, current) => {
+                return (prev.simValue > current.simValue) ? prev : current
+            });
+
+            const item = database.find(item => item.id === maxSim.id);
+            alert(`Recomendação! ${item.brand} - ${item.model} por R$ ${item.price.toFixed(2).replace('.', ',')}!`);
+
+        }, 60000);
+    }
+
     function getThumbTemplate(item) {
         return `
-            <div class="col-sm-4" id="item-${item.id}">
+            <div class="col-sm-6" id="item-${item.id}">
                 <div class="thumbnail">
                     <img src="images/no-image.webp">
                     <div class="caption">
                         <h3>${item.brand} ${item.model}</h3>
                         <p>
-                            <strong>SO</strong>: ${item.so} <br />
+                            <strong>SO</strong>: ${item.so} ${item.dualSim && `<span class="label label-info">Dual SIM</span>`}<br />
                             <strong>RAM</strong>: ${item.ram}GB <br />
                             <strong>Armazenamento</strong>: ${item.storage}GB <br />
                             <strong>Tam. da tela</strong>: ${item.screenSize}'

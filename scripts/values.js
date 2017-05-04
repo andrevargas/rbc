@@ -1,46 +1,46 @@
 const SO_VALUES = {
-    'Android': 0,
-    'iOS': 0,
+    'Android': 0.1,
+    'iOS': 1,
 };
 
 const SCREEN_SIZE_VALUES = {
-    '5.0': 0,
-    '5.5': 0,
-    '5.7': 0,
-    '5.8': 0,
-    '5.15': 0
+    '5': 0.1,
+    '5.5': 0.3,
+    '5.7': 0.5,
+    '5.8': 0.6,
+    '5.15': 1
 };
 
 const RAM_VALUES = {
-    '2': 0,
-    '3': 0,
-    '4': 0,
-    '6': 0,
-    '8': 0
+    '2': 0.1,
+    '3': 0.2,
+    '4': 0.3,
+    '6': 0.5,
+    '8': 0.7
 };
 
 const STORAGE_VALUES = {
-    '16': 0,
-    '32': 0,
-    '64': 0,
-    '128': 0,
-    '256': 0
+    '16': 0.1,
+    '32': 0.3,
+    '64': 0.6,
+    '128': 1,
+    '256': 2
 };
 
 const PRICE_RANGE_VALUES = {
-    '0-999': 0,
-    '1000-1999': 0,
-    '2000-2999': 0,
-    '3000': 0 
+    '0-999': 1,
+    '1000-1999': 2,
+    '2000-2999': 3,
+    '3000': 4 
 };
 
 const WEIGHTS = {
-    brand: 0,
-    model: 0,
-    so: 0,
-    screenSize: 0,
-    ram: 0,
-    storage: 0,
-    dualSim: 0,
-    priceRange: 0,
+    brand: 1,
+    model: 1,
+    so: 1,
+    screenSize: 1,
+    ram: 1,
+    storage: 1,
+    dualSim: 1,
+    priceRange: 1,
 };
