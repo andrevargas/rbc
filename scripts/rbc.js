@@ -76,10 +76,7 @@ const RBC = (() => {
             + (WEIGHTS.priceRange * priceRangeSim)
         ) / totalWeight;
 
-        return {
-            id: storedCase.id,
-            simValue: globalSim
-        };
+        return Object.assign(storedCase, { simValue: globalSim });
 
     }
 

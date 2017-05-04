@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.2.3"></script>
     <link rel="stylesheet" href="css/jumbotron-narrow.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -26,7 +27,10 @@
 
         <input type="text" id="search" class="form-control input-lg" placeholder="Buscar por marca ou modelo..." />
         
-        <h3 id="section-title">Mais populares</h3>
+        <h3 class="section-title" id="recommendation-title"></h3>
+        <div class="row marketing" id="recommendation"></div>
+
+        <h3 class="section-title" id="show-off-title">Mais populares</h3>
         <div class="row marketing" id="show-off"></div>
 
         <footer class="footer">

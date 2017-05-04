@@ -35,12 +35,12 @@ const PRICE_RANGE_VALUES = {
 };
 
 const WEIGHTS = {
-    brand: 1,
-    model: 1,
-    so: 1,
-    screenSize: 1,
-    ram: 1,
-    storage: 1,
+    brand: 3,
+    model: 2,
+    so: 4,
+    screenSize: 2,
+    ram: 3,
+    storage: 3,
     dualSim: 1,
-    priceRange: 1,
+    priceRange: 4,
 };

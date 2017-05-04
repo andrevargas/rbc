@@ -1,18 +1,33 @@
 const User = (() => {
 
-    const recentSearches = {};
+    const lastPurchaseInfo = {
+        so: 'Android',
+        price: 2000,
+        ram: 4,
+        storage: 128
+    };
 
-    function addSearch(key, value) {
-        recentSearches[key] = value;
+    let lastSearch = {
+        criteria: null,
+        results: []
+    };
+
+    function setLastSearch(criteria, results) {
+        lastSearch = { criteria, results };
     }
 
-    function getSearches() {
-        return recentSearches;
+    function getLastSearch() {
+        return lastSearch;
+    }
+
+    function getLastPurchaseInfo() {
+        return lastPurchaseInfo;
     }
 
     return {
-        getSearches,
-        addSearch
+        getLastSearch,
+        getLastPurchaseInfo,
+        setLastSearch
     };
 
 })();

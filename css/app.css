@@ -2,11 +2,15 @@
     min-height: 450px;
 }
 
+.emoji {
+    max-width: 20px;
+}
+
 .label {
     position: relative;
     top: -3px;
 }
 
-#section-title {
+.section-title {
     padding-left: 15px;
 }
